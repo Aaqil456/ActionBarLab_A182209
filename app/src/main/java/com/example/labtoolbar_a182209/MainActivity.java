@@ -5,6 +5,7 @@ import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -38,19 +39,25 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
+        Intent intent;
         switch (item.getItemId()){
 
             case R.id.menu_notification:
                 Toast.makeText(MainActivity.this, "notification", Toast.LENGTH_SHORT).show();
+                intent= new Intent(MainActivity.this,NotificationActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.menu_settings:
                 Toast.makeText(MainActivity.this, "settings", Toast.LENGTH_SHORT).show();
+                intent= new Intent(MainActivity.this,SettingsActivity.class);
+                startActivity(intent);
                 break;
 
             case R.id.menu_sync:
                 Toast.makeText(MainActivity.this, "sync", Toast.LENGTH_SHORT).show();
+                intent= new Intent(MainActivity.this,SyncActivity.class);
+                startActivity(intent);
                 break;
 
                     
