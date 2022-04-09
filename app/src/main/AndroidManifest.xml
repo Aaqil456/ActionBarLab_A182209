@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LabToolbar_a182209">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".SettingsActivity"
             android:exported="false" />
         <activity

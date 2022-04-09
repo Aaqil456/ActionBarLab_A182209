@@ -60,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
 
+            case R.id.menu_profile:
+                Toast.makeText(MainActivity.this, "profile", Toast.LENGTH_SHORT).show();
+                intent= new Intent(MainActivity.this,ProfileActivity.class);
+                startActivity(intent);
+                break;
+
                     
         }
         return super.onOptionsItemSelected(item);
