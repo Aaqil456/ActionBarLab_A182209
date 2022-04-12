@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LabToolbar_a182209">
         <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".InfoActivity"
             android:exported="false" />
         <activity

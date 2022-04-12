@@ -72,6 +72,12 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
                 break;
 
+            case R.id.menu_payment:
+                Toast.makeText(MainActivity.this, "payment", Toast.LENGTH_SHORT).show();
+                intent= new Intent(MainActivity.this,PaymentActivity.class);
+                startActivity(intent);
+                break;
+
                     
         }
         return super.onOptionsItemSelected(item);
