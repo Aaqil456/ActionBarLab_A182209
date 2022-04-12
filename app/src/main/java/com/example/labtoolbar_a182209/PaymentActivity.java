@@ -4,14 +4,17 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class PaymentActivity extends AppCompatActivity {
     Toolbar toolbar;
-    EditText etPay;
+    EditText etPay,etRoom;
     Button btnPay;
 
     @Override
@@ -19,19 +22,25 @@ public class PaymentActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
 
-        toolbar=findViewById(R.id.toolbar_main);
+        toolbar = findViewById(R.id.toolbar_main);
         setSupportActionBar(toolbar);
-        
-        etPay=findViewById(R.id.valueRM);
-        btnPay=findViewById(R.id.btnPay);
-        
+
+        etPay = findViewById(R.id.valueRM);
+        btnPay = findViewById(R.id.btnPay);
+        etRoom=findViewById(R.id.etRoom);
+
+
+
         btnPay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Toast.makeText(PaymentActivity.this, "Thank you for paying RM "+etPay.getText(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(PaymentActivity.this, "Thank you for paying RM " + etPay.getText()+" for room "+ etRoom.getText(), Toast.LENGTH_LONG).show();
 
             }
         });
+
     }
+
+
 }

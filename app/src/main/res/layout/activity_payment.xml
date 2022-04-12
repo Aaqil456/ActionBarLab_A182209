@@ -26,7 +26,7 @@
         android:layout_marginStart="181dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="173dp"
-        android:text="PAYMENT"
+        android:text="RENT ROOM"
         android:textColor="@color/black"
         android:textSize="40sp"
         app:layout_constraintEnd_toEndOf="@+id/toolbar_main"
@@ -38,7 +38,7 @@
         android:id="@+id/textView11"
         android:layout_width="167dp"
         android:layout_height="54dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="20dp"
         android:padding="15dp"
         android:text="Enter Payment: "
         android:textSize="20sp"
@@ -60,12 +60,12 @@
         android:id="@+id/btnPay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="60dp"
         android:text="Make Payment"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="@+id/valueRM"
-        app:layout_constraintHorizontal_bias="0.836"
+        app:layout_constraintHorizontal_bias="0.618"
         app:layout_constraintStart_toStartOf="@+id/textView11"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -77,6 +77,29 @@
         app:layout_constraintEnd_toEndOf="@+id/textView10"
         app:layout_constraintStart_toStartOf="@+id/textView10"
         app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:srcCompat="@drawable/money" />
+        app:srcCompat="@drawable/room_no_bg" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Room Number"
+        android:padding="15dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textView11"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <EditText
+        android:id="@+id/etRoom"
+        android:layout_width="163dp"
+        android:layout_height="68dp"
+        android:hint="No"
+        app:layout_constraintBottom_toBottomOf="@+id/textView12"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView12"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
