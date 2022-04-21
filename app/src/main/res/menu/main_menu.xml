@@ -31,6 +31,6 @@
     <item
         android:id="@+id/menu_payment"
         android:icon="@drawable/ic_payment"
-        app:showAsAction="ifRoom"
-        android:title="Payment" />
+        android:title="Rent"
+        app:showAsAction="ifRoom" />
 </menu>

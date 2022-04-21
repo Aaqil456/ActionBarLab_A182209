@@ -67,13 +67,13 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
             case R.id.menu_info:
-                Toast.makeText(MainActivity.this, "profile", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "info", Toast.LENGTH_SHORT).show();
                 intent= new Intent(MainActivity.this,InfoActivity.class);
                 startActivity(intent);
                 break;
 
             case R.id.menu_payment:
-                Toast.makeText(MainActivity.this, "payment", Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this, "rent", Toast.LENGTH_SHORT).show();
                 intent= new Intent(MainActivity.this,PaymentActivity.class);
                 startActivity(intent);
                 break;
